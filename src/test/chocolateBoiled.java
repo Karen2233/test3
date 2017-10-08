@@ -14,6 +14,12 @@ public static chocolateBoiled getExistencePot() {
 	}
 	return existencePot;
 }
+public boolean isEmpty() {
+	return this.empty;
+}
+public boolean isBoiled() {
+	return this.boiled;
+}
 public void fill() {
 	if(empty==true) {
 		System.out.println("fill the pot");
@@ -46,11 +52,5 @@ public void drain() {
 	else if(empty==false&&boiled==false) {
 		System.out.println("chocolate is boiling");
 	}
-}
-public static void main(String args[]) {
-	chocolateBoiled tst=getExistencePot();
-	tst.fill();
-	tst.boil();
-	tst.drain();
 }
 }
